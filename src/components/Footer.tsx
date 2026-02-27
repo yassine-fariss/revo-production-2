@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Facebook, Instagram, Linkedin } from 'lucide-react';
+import logoUrl from '../assets/logo.png';
 
 const Footer = () => {
     const { t } = useTranslation();
@@ -11,8 +12,8 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     {/* Brand */}
                     <div className="md:col-span-1">
-                        <Link to="/" className="text-2xl font-bold tracking-widest text-white block mb-4">
-                            REVO<span className="text-brand-gold">.</span>
+                        <Link to="/" className="block mb-4">
+                            <img src={logoUrl} alt="Revo Production" className="h-14 md:h-20 w-auto mix-blend-screen object-contain -ml-4" />
                         </Link>
                         <p className="text-white/60 text-sm leading-relaxed">
                             Production Vidéo & Création Digitale de haute qualité à Casablanca.

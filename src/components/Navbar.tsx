@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Globe } from 'lucide-react';
+import logoUrl from '../assets/logo.png';
 
 const Navbar = () => {
     const { t, i18n } = useTranslation();
@@ -29,8 +30,8 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
                 {/* Logo */}
-                <Link to="/" className="text-2xl font-bold tracking-widest text-white">
-                    REVO<span className="text-brand-gold">.</span>
+                <Link to="/" className="flex items-center">
+                    <img src={logoUrl} alt="Revo Production" className="h-12 md:h-16 w-auto mix-blend-screen object-contain" />
                 </Link>
 
                 {/* Desktop Menu */}
