@@ -1,0 +1,13 @@
+@import "tailwindcss";
+@import "tailwindcss/utilities";
+
+@theme {
+  --color-brand-gold: #C6A75E;
+  --color-brand-black: #000000;
+  --color-brand-white: #FFFFFF;
+}
+
+body {
+  @apply bg-brand-black text-brand-white antialiased;
+  font-family: 'Inter', system-ui, sans-serif;
+}

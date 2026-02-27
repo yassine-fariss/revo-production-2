@@ -1,0 +1,11 @@
+{
+    "translation": {
+        "nav.home": "Home",
+        "nav.services": "Services",
+        "nav.about": "About",
+        "nav.contact": "Contact",
+        "hero.title": "Video Production & Digital Creation in Casablanca",
+        "hero.btn.portfolio": "View our work",
+        "hero.btn.contact": "Contact us"
+    }
+}

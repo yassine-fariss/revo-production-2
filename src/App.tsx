@@ -1,0 +1,32 @@
+import { Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+// Import pages (stubs for now)
+import Home from './pages/Home';
+import Services from './pages/Services';
+import Videography from './pages/portfolio/Videography';
+import Photography from './pages/portfolio/Photography';
+import MontageReels from './pages/portfolio/MontageReels';
+import WebDesign from './pages/portfolio/WebDesign';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="services" element={<Services />} />
+        <Route path="portfolio">
+          <Route path="videography" element={<Videography />} />
+          <Route path="photography" element={<Photography />} />
+          <Route path="montage-reels" element={<MontageReels />} />
+          <Route path="web-design" element={<WebDesign />} />
+        </Route>
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default App;
